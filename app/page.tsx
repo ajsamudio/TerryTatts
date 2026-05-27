@@ -5,6 +5,7 @@ import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
 import { GalleryTile } from "@/components/gallery-tile";
 import { TestimonialCarousel } from "@/components/testimonial-carousel";
+import { InstagramCarousel } from "@/components/instagram-carousel";
 import { Button } from "@/components/ui/button";
 import { GALLERY } from "@/lib/gallery";
 import { SERVICES } from "@/lib/services";
@@ -142,13 +143,7 @@ export default function HomePage() {
           title={<>Latest from <span className="italic text-blood">@terry.tattoos</span></>}
           className="mb-10"
         />
-        <div className="grid grid-cols-4 md:grid-cols-8 gap-2">
-          {ig.map((item, i) => (
-            <Reveal key={item.id} delay={i * 0.03}>
-              <GalleryTile item={{ ...item, ratio: "square" }} />
-            </Reveal>
-          ))}
-        </div>
+        <InstagramCarousel items={ig} />
       </section>
 
       <section className="border-y border-border bg-card/30">

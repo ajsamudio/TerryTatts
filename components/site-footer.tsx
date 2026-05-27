@@ -82,6 +82,21 @@ export function SiteFooter() {
             <li>Sun–Mon · Closed</li>
             <li>(555) 010-INK1</li>
           </ul>
+          <a
+            href="https://www.openstreetmap.org/?mlat=40.7128&mlon=-73.9571#map=15/40.7128/-73.9571"
+            target="_blank"
+            rel="noreferrer"
+            className="mt-4 block border border-border hover:border-blood transition-colors overflow-hidden"
+            aria-label="Open studio location in OpenStreetMap"
+          >
+            <iframe
+              title="Studio location map"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-73.97%2C40.705%2C-73.945%2C40.72&layer=mapnik&marker=40.7128%2C-73.9571"
+              loading="lazy"
+              className="block w-full h-40 grayscale-[40%] contrast-110 pointer-events-none"
+              style={{ border: 0 }}
+            />
+          </a>
         </div>
 
         <div className="md:col-span-1">
