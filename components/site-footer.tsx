@@ -82,21 +82,15 @@ export function SiteFooter() {
             <li>Sun–Mon · Closed</li>
             <li>(555) 010-INK1</li>
           </ul>
-          <a
-            href="https://www.openstreetmap.org/?mlat=33.9731&mlon=-118.2479#map=15/33.9731/-118.2479"
-            target="_blank"
-            rel="noreferrer"
-            className="mt-4 block border border-border hover:border-blood transition-colors overflow-hidden"
-            aria-label="Open studio location in OpenStreetMap"
-          >
+          <div className="mt-4 border border-border overflow-hidden aspect-[4/3]">
             <iframe
-              title="Studio location map"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-118.27%2C33.955%2C-118.225%2C33.99&layer=mapnik&marker=33.9731%2C-118.2479"
+              title="Studio location"
+              src="https://www.google.com/maps?q=south+central+los+angeles+ca&output=embed"
+              className="w-full h-full filter grayscale invert-[0.92] hue-rotate-180 contrast-90 pointer-events-none"
               loading="lazy"
-              className="block w-full h-40 grayscale-[40%] contrast-110 pointer-events-none"
               style={{ border: 0 }}
             />
-          </a>
+          </div>
         </div>
 
         <div className="md:col-span-1">
