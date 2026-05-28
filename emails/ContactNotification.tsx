@@ -12,7 +12,7 @@
 //     <Html>
 //       <Body style={{ fontFamily: "system-ui", background: "#0a0a0a", color: "#e8e6e3", padding: 24 }}>
 //         <Container style={{ maxWidth: 560 }}>
-//           <Heading style={{ color: "#b91c1c" }}>New message — Terry Tattoos</Heading>
+//           <Heading style={{ color: "#b91c1c" }}>New message — buddha_.tattz</Heading>
 //           <Text><strong>From:</strong> {name} ({email})</Text>
 //           <Hr style={{ borderColor: "#2a2a2a" }} />
 //           <Text style={{ whiteSpace: "pre-wrap" }}>{message}</Text>

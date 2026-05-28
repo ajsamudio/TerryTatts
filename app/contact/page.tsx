@@ -5,7 +5,7 @@ import { Reveal } from "@/components/reveal";
 import { ContactForm } from "@/components/contact-form";
 
 export const metadata = {
-  title: "Contact — Terry Tattoos",
+  title: "Contact — buddha_.tattz",
   description: "Find the studio, hours, and a quick message form.",
 };
 
@@ -27,7 +27,7 @@ export default function ContactPage() {
               <InfoRow
                 icon={MapPin}
                 label="Studio"
-                value={<>123 Ink Lane<br />Brooklyn, NY 11211</>}
+                value={<>South Central<br />Los Angeles, CA</>}
               />
               <InfoRow
                 icon={Clock3}
@@ -41,15 +41,15 @@ export default function ContactPage() {
                 }
               />
               <InfoRow icon={Phone} label="Phone" value="(555) 010-INK1" />
-              <InfoRow icon={Mail} label="Email" value="hello@terrytattoos.com" />
+              <InfoRow icon={Mail} label="Email" value="hello@buddhatattz.com" />
               <div className="flex gap-3 pt-2">
-                <Social href="https://instagram.com" icon={InstagramIcon} label="Instagram" />
+                <Social href="https://www.instagram.com/buddha_.tattz/" icon={InstagramIcon} label="Instagram" />
                 <Social href="https://tiktok.com" icon={TikTokIcon} label="TikTok" />
               </div>
               <div className="aspect-[4/3] border border-border overflow-hidden mt-6">
                 <iframe
                   title="Studio location"
-                  src="https://www.google.com/maps?q=brooklyn+ny+williamsburg&output=embed"
+                  src="https://www.google.com/maps?q=south+central+los+angeles+ca&output=embed"
                   className="w-full h-full filter grayscale invert-[0.92] hue-rotate-180 contrast-90"
                   loading="lazy"
                 />

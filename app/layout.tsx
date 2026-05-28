@@ -27,13 +27,33 @@ const stamp = Special_Elite({
 });
 
 export const metadata: Metadata = {
-  title: "Terry Tattoos — Custom ink, built to last",
+  title: "buddha_.tattz — Custom ink, built to last",
   description:
-    "Terry Tattoos is a single-chair private tattoo studio specializing in blackwork, fine line, and traditional. Book a consultation today.",
+    "buddha_.tattz is a single-chair private tattoo studio in South Central, CA specializing in blackwork, fine line, and traditional. Book a consultation today.",
+  metadataBase: new URL("https://buddhatattz.com"),
+  icons: {
+    icon: "/favicon.svg",
+  },
   openGraph: {
-    title: "Terry Tattoos",
-    description: "Custom tattoos by Terry. Book a session.",
+    title: "buddha_.tattz — Custom ink, built to last",
+    description: "Private studio. South Central, CA. Custom blackwork, fine line & realism by Buddha. Book a session.",
     type: "website",
+    url: "https://buddhatattz.com",
+    siteName: "buddha_.tattz",
+    images: [
+      {
+        url: "/gallery/galleryTat1.jpg",
+        width: 1200,
+        height: 1200,
+        alt: "LA cityscape half sleeve by buddha_.tattz — South Central, CA",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "buddha_.tattz — Custom ink, built to last",
+    description: "Private studio. South Central, CA. Custom blackwork, fine line & realism by Buddha.",
+    images: ["/gallery/galleryTat1.jpg"],
   },
 };
 

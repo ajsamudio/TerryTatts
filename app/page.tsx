@@ -1,9 +1,10 @@
+import Image from "next/image";
 import Link from "next/link";
 import { ArrowRight, Award, Clock3, ShieldCheck, Sparkles } from "lucide-react";
 import { Hero } from "@/components/hero";
 import { Reveal } from "@/components/reveal";
 import { SectionHeading } from "@/components/section-heading";
-import { GalleryTile } from "@/components/gallery-tile";
+import { FeaturedGrid } from "@/components/featured-grid";
 import { TestimonialCarousel } from "@/components/testimonial-carousel";
 import { InstagramCarousel } from "@/components/instagram-carousel";
 import { Button } from "@/components/ui/button";
@@ -22,13 +23,20 @@ export default function HomePage() {
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-20 grid md:grid-cols-2 gap-12 items-center">
           <Reveal>
             <div className="aspect-[4/5] border border-border bg-card relative overflow-hidden grain">
+              <Image
+                src="/gallery/profileImage.jpg"
+                alt="Buddha tattooing in the studio"
+                fill
+                className="object-cover object-top"
+                priority
+              />
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_30%_30%,rgba(185,28,28,0.2),transparent_60%)]" />
               <div className="absolute inset-0 flex items-end p-8">
                 <div>
                   <div className="font-stamp uppercase text-xs tracking-[0.3em] text-blood-bright">
                     Meet the artist
                   </div>
-                  <div className="font-heading text-3xl uppercase mt-2">Terry</div>
+                  <div className="font-heading text-3xl uppercase mt-2">Buddha</div>
                   <div className="text-sm text-muted-foreground mt-1">
                     10 years · 4,000+ pieces
                   </div>
@@ -45,11 +53,11 @@ export default function HomePage() {
                   <span className="italic text-blood">No compromises.</span>
                 </>
               }
-              description="I run a private studio in Brooklyn — one client at a time, in a clean room, with the time we both need. No counter pressure, no rushed line work. If we book a session, the room is yours."
+              description="I run a private studio in South Central — one client at a time, in a clean room, with the time we both need. No counter pressure, no rushed line work. If we book a session, the room is yours."
             />
             <Reveal delay={0.1} className="mt-8 grid sm:grid-cols-2 gap-4">
               <Feature icon={ShieldCheck} title="Single-use, sterile" body="Hospital-grade autoclave. Every needle, single-use." />
-              <Feature icon={Award} title="10 years pro" body="Apprenticed in Tokyo. Stateside since 2014." />
+              <Feature icon={Award} title="10 years pro" body="From South Central, CA. Tattooing since 2014." />
               <Feature icon={Clock3} title="No rushed chairs" body="Sessions booked with breathing room. Yours alone." />
               <Feature icon={Sparkles} title="Touch-ups included" body="Free touch-up within 90 days. One per piece." />
             </Reveal>
@@ -60,7 +68,7 @@ export default function HomePage() {
                 className="mt-8 border-blood text-blood hover:bg-blood hover:text-white uppercase tracking-widest"
               >
                 <Link href="/about">
-                  More about Terry <ArrowRight className="ml-2 h-4 w-4" />
+                  More about Buddha <ArrowRight className="ml-2 h-4 w-4" />
                 </Link>
               </Button>
             </Reveal>
@@ -87,13 +95,7 @@ export default function HomePage() {
           </Reveal>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
-          {featured.map((item, i) => (
-            <Reveal key={item.id} delay={i * 0.05}>
-              <GalleryTile item={item} priority={i < 3} />
-            </Reveal>
-          ))}
-        </div>
+        <FeaturedGrid items={featured} />
       </section>
 
       <section className="border-y border-border bg-card/30">
@@ -140,7 +142,7 @@ export default function HomePage() {
       <section className="mx-auto max-w-7xl px-4 sm:px-6 py-24">
         <SectionHeading
           eyebrow="On the gram"
-          title={<>Latest from <span className="italic text-blood">@terry.tattoos</span></>}
+          title={<>Latest from <span className="italic text-blood">@buddha_.tattz</span></>}
           className="mb-10"
         />
         <InstagramCarousel items={ig} />

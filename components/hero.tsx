@@ -24,7 +24,7 @@ export function Hero() {
           transition={{ delay: 0.1, duration: 0.6 }}
           className="font-stamp text-xs sm:text-sm uppercase tracking-[0.4em] text-blood-bright mb-6"
         >
-          ✦ Brooklyn · Private Chair · Est. 2014 ✦
+          ✦ South Central, CA · Private Chair · Est. 2014 ✦
         </motion.p>
         <motion.h1
           initial={reduce ? false : { opacity: 0, y: 24 }}
@@ -41,7 +41,7 @@ export function Hero() {
           transition={{ delay: 0.4, duration: 0.7 }}
           className="mt-8 max-w-xl mx-auto text-base sm:text-lg text-muted-foreground leading-relaxed"
         >
-          Custom traditional, blackwork &amp; fine line by Terry —
+          Custom traditional, blackwork &amp; fine line by Buddha —
           one chair, one artist, no rushed appointments.
         </motion.p>
         <motion.div

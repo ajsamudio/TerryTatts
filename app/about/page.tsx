@@ -1,3 +1,4 @@
+import Image from "next/image";
 import Link from "next/link";
 import { Award, MapPin, Clock3, Heart } from "lucide-react";
 import { SectionHeading } from "@/components/section-heading";
@@ -5,18 +6,18 @@ import { Reveal } from "@/components/reveal";
 import { Button } from "@/components/ui/button";
 
 export const metadata = {
-  title: "About — Terry Tattoos",
-  description: "Meet Terry — single-chair private studio in Brooklyn.",
+  title: "About — buddha_.tattz",
+  description: "Meet Buddha — single-chair private studio in South Central, CA.",
 };
 
 const STYLES_I_DO = [
-  "Traditional",
-  "Neo-traditional",
+  "Black & Grey",
+  "Chicano Lettering",
   "Blackwork",
-  "Fine line",
+  "Fine Line",
   "Japanese",
   "Realism",
-  "Ornamental",
+  "Color",
   "Cover-ups",
 ];
 
@@ -26,7 +27,7 @@ export default function AboutPage() {
       <div className="mx-auto max-w-6xl px-4 sm:px-6">
         <SectionHeading
           eyebrow="The artist"
-          title={<>Hi, I&apos;m <span className="italic text-blood">Terry.</span></>}
+          title={<>Hi, I&apos;m <span className="italic text-blood">Buddha.</span></>}
           description="A decade of ink. One chair. No assembly line."
           align="center"
           className="mb-16"
@@ -35,11 +36,18 @@ export default function AboutPage() {
         <div className="grid md:grid-cols-2 gap-12 items-start">
           <Reveal>
             <div className="aspect-[4/5] border border-border bg-card relative overflow-hidden grain">
+              <Image
+                src="/gallery/profileImage.jpg"
+                alt="Buddha tattooing in the studio"
+                fill
+                className="object-cover object-top"
+                priority
+              />
               <div className="absolute inset-0 bg-[radial-gradient(circle_at_50%_30%,rgba(185,28,28,0.25),transparent_55%)]" />
               <div className="absolute inset-x-0 bottom-0 p-6 flex items-end justify-between">
                 <div>
                   <div className="font-stamp uppercase text-xs tracking-[0.3em] text-blood-bright">
-                    Terry
+                    Buddha
                   </div>
                   <div className="font-heading text-2xl uppercase">In the studio</div>
                 </div>
@@ -53,9 +61,9 @@ export default function AboutPage() {
           <Reveal delay={0.1}>
             <div className="space-y-6 text-bone leading-relaxed">
               <p>
-                I started tattooing in 2014 after a three-year apprenticeship in
-                Tokyo under Master Horiyuki. Came home to Brooklyn, worked the
-                shop circuit for six years, opened my own private studio in 2020.
+                I started tattooing in 2014, coming up through the shop circuit
+                in South Central before opening my own private studio. This is
+                where I grew up — and it&apos;s where I do my best work.
               </p>
               <p>
                 The reason it&apos;s private is simple: I don&apos;t want to rush
@@ -73,7 +81,7 @@ export default function AboutPage() {
               <div className="grid grid-cols-2 gap-4 pt-4">
                 <Stat icon={Award} label="Years" value="10+" />
                 <Stat icon={Heart} label="Pieces" value="4,000+" />
-                <Stat icon={MapPin} label="Studio" value="Brooklyn" />
+                <Stat icon={MapPin} label="Studio" value="S. Central" />
                 <Stat icon={Clock3} label="By appt." value="Tue–Sat" />
               </div>
             </div>

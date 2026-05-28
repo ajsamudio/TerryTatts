@@ -40,7 +40,7 @@ export function SiteNav() {
         <Link href="/" className="flex items-center gap-2 group">
           <Skull className="h-6 w-6 text-blood group-hover:rotate-12 transition-transform" />
           <span className="font-heading font-bold text-lg tracking-widest uppercase">
-            Terry<span className="text-blood">.</span>Tattoos
+            buddha_<span className="text-blood">.</span>tattz
           </span>
         </Link>
 

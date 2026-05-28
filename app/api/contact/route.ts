@@ -9,8 +9,8 @@ import { NextResponse } from "next/server";
  *   import { resend } from "@/lib/resend";
  *   import ContactNotification from "@/emails/ContactNotification";
  *   await resend.emails.send({
- *     from: "Terry Tattoos <hello@terrytattoos.com>",
- *     to: "hello@terrytattoos.com",
+ *     from: "buddha_.tattz <hello@buddhatattz.com>",
+ *     to: "hello@buddhatattz.com",
  *     replyTo: data.email,
  *     subject: `New message from ${data.name}`,
  *     react: ContactNotification({ ...data }),

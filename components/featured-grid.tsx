@@ -2,7 +2,7 @@
 
 import Image from "next/image";
 import Link from "next/link";
-import { useMemo, useState } from "react";
+import { useState } from "react";
 import {
   Dialog,
   DialogContent,
@@ -10,54 +10,26 @@ import {
   DialogDescription,
 } from "@/components/ui/dialog";
 import { Button } from "@/components/ui/button";
-import { GalleryTile, PlaceholderArtwork } from "@/components/gallery-tile";
+import { GalleryTile } from "@/components/gallery-tile";
 import { Reveal } from "@/components/reveal";
-import { cn } from "@/lib/utils";
-import { STYLES, type GalleryItem, type TattooStyle } from "@/lib/gallery";
+import type { GalleryItem } from "@/lib/gallery";
 
-type Filter = "All" | TattooStyle;
-
-export function GalleryClient({ items }: { items: GalleryItem[] }) {
-  const [filter, setFilter] = useState<Filter>("All");
+export function FeaturedGrid({ items }: { items: GalleryItem[] }) {
   const [active, setActive] = useState<GalleryItem | null>(null);
-
-  const filtered = useMemo(
-    () => (filter === "All" ? items : items.filter((i) => i.style === filter)),
-    [items, filter]
-  );
 
   return (
     <>
-      <div className="flex flex-wrap gap-2 justify-center mb-10">
-        {STYLES.map((s) => (
-          <button
-            key={s}
-            onClick={() => setFilter(s)}
-            className={cn(
-              "px-4 py-2 text-xs font-stamp uppercase tracking-[0.2em] border transition-colors",
-              filter === s
-                ? "bg-blood border-blood text-white"
-                : "border-border text-muted-foreground hover:border-blood hover:text-blood"
-            )}
-          >
-            {s}
-          </button>
-        ))}
-      </div>
-
-      <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-3 md:gap-4">
-        {filtered.map((item, i) => (
-          <Reveal key={item.id} delay={Math.min(i * 0.04, 0.4)}>
-            <GalleryTile item={item} onClick={() => setActive(item)} />
+      <div className="grid grid-cols-2 md:grid-cols-3 gap-3 md:gap-4">
+        {items.map((item, i) => (
+          <Reveal key={item.id} delay={i * 0.05}>
+            <GalleryTile
+              item={item}
+              priority={i < 3}
+              onClick={() => setActive(item)}
+            />
           </Reveal>
         ))}
       </div>
-
-      {filtered.length === 0 && (
-        <p className="text-center text-muted-foreground py-12">
-          Nothing in this style yet — check back soon.
-        </p>
-      )}
 
       <Dialog open={!!active} onOpenChange={(o) => !o && setActive(null)}>
         <DialogContent className="bg-black border-border max-w-[95vw] w-[95vw] p-0 overflow-hidden">
@@ -71,7 +43,6 @@ export function GalleryClient({ items }: { items: GalleryItem[] }) {
                   sizes="95vw"
                   className="object-contain"
                   priority
-                  onError={() => {}}
                 />
               </div>
               <div className="flex items-center justify-between px-6 py-4 bg-background/95 backdrop-blur-sm border-t border-border">

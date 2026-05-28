@@ -12,7 +12,7 @@ export function SiteFooter() {
           <Link href="/" className="flex items-center gap-2">
             <Skull className="h-6 w-6 text-blood" />
             <span className="font-heading font-bold tracking-widest uppercase">
-              Terry<span className="text-blood">.</span>Tattoos
+              buddha_<span className="text-blood">.</span>tattz
             </span>
           </Link>
           <p className="mt-4 text-sm text-muted-foreground leading-relaxed">
@@ -20,7 +20,7 @@ export function SiteFooter() {
           </p>
           <div className="mt-6 flex items-center gap-3">
             <a
-              href="https://instagram.com"
+              href="https://www.instagram.com/buddha_.tattz/"
               target="_blank"
               rel="noreferrer"
               className="p-2 border border-border hover:border-blood hover:text-blood transition-colors"
@@ -38,7 +38,7 @@ export function SiteFooter() {
               <TikTokIcon className="h-4 w-4" />
             </a>
             <a
-              href="mailto:hello@terrytattoos.com"
+              href="mailto:hello@buddhatattz.com"
               className="p-2 border border-border hover:border-blood hover:text-blood transition-colors"
               aria-label="Email"
             >
@@ -73,9 +73,9 @@ export function SiteFooter() {
             <li className="flex items-start gap-2">
               <MapPin className="h-4 w-4 mt-0.5 text-blood shrink-0" />
               <span>
-                123 Ink Lane
+                South Central
                 <br />
-                Brooklyn, NY 11211
+                Los Angeles, CA
               </span>
             </li>
             <li>Tue–Sat · 11am–8pm</li>
@@ -83,7 +83,7 @@ export function SiteFooter() {
             <li>(555) 010-INK1</li>
           </ul>
           <a
-            href="https://www.openstreetmap.org/?mlat=40.7128&mlon=-73.9571#map=15/40.7128/-73.9571"
+            href="https://www.openstreetmap.org/?mlat=33.9731&mlon=-118.2479#map=15/33.9731/-118.2479"
             target="_blank"
             rel="noreferrer"
             className="mt-4 block border border-border hover:border-blood transition-colors overflow-hidden"
@@ -91,7 +91,7 @@ export function SiteFooter() {
           >
             <iframe
               title="Studio location map"
-              src="https://www.openstreetmap.org/export/embed.html?bbox=-73.97%2C40.705%2C-73.945%2C40.72&layer=mapnik&marker=40.7128%2C-73.9571"
+              src="https://www.openstreetmap.org/export/embed.html?bbox=-118.27%2C33.955%2C-118.225%2C33.99&layer=mapnik&marker=33.9731%2C-118.2479"
               loading="lazy"
               className="block w-full h-40 grayscale-[40%] contrast-110 pointer-events-none"
               style={{ border: 0 }}
@@ -111,9 +111,9 @@ export function SiteFooter() {
       </div>
       <div className="border-t border-border">
         <div className="mx-auto max-w-7xl px-4 sm:px-6 py-6 flex flex-col sm:flex-row items-center justify-between gap-2 text-xs text-muted-foreground uppercase tracking-widest">
-          <span>© {new Date().getFullYear()} Terry Tattoos · Demo site</span>
+          <span>© {new Date().getFullYear()} buddha_.tattz</span>
           <span className="font-stamp normal-case tracking-normal">
-            Hand-made on the East Coast
+            Hand-made in South Central
           </span>
         </div>
       </div>

@@ -4,8 +4,8 @@ import { SectionHeading } from "@/components/section-heading";
 import { GALLERY } from "@/lib/gallery";
 
 export const metadata: Metadata = {
-  title: "Gallery — Terry Tattoos",
-  description: "Recent work from Terry — blackwork, traditional, fine line, and more.",
+  title: "Gallery — buddha_.tattz",
+  description: "Recent work from Buddha — blackwork, traditional, fine line, and more.",
 };
 
 export default function GalleryPage() {

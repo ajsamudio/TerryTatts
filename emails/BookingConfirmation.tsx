@@ -34,7 +34,7 @@
 //       <Head />
 //       <Body style={{ fontFamily: "system-ui", background: "#0a0a0a", color: "#e8e6e3", padding: 24 }}>
 //         <Container style={{ maxWidth: 560, margin: "0 auto" }}>
-//           <Heading style={{ color: "#b91c1c", letterSpacing: 4 }}>TERRY · TATTOOS</Heading>
+//           <Heading style={{ color: "#b91c1c", letterSpacing: 4 }}>BUDDHA · TATTZ</Heading>
 //           <Text>Hey {booking.name},</Text>
 //           <Text>Your booking is locked in. Details below — bring valid ID and eat beforehand.</Text>
 //           <Hr style={{ borderColor: "#2a2a2a" }} />

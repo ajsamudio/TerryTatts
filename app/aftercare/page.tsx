@@ -3,7 +3,7 @@ import { SectionHeading } from "@/components/section-heading";
 import { Reveal } from "@/components/reveal";
 
 export const metadata = {
-  title: "Aftercare — Terry Tattoos",
+  title: "Aftercare — buddha_.tattz",
   description: "How to heal your new tattoo: day-by-day instructions, do's and don'ts.",
 };
 

@@ -11,7 +11,7 @@ import { Button } from "@/components/ui/button";
 import { FAQ } from "@/lib/faq";
 
 export const metadata = {
-  title: "FAQ — Terry Tattoos",
+  title: "FAQ — buddha_.tattz",
   description: "Pricing, deposits, age, pain, aftercare, and everything else.",
 };
 

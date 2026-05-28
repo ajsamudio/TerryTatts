@@ -2,8 +2,8 @@ import type { Metadata } from "next";
 import { BookingWizard } from "@/components/booking-wizard";
 
 export const metadata: Metadata = {
-  title: "Book a Session — Terry Tattoos",
-  description: "Reserve a chair with Terry. Pick a date, share your idea, lock it in with a $50 deposit.",
+  title: "Book a Session — buddha_.tattz",
+  description: "Reserve a chair with Buddha. Pick a date, share your idea, lock it in with a $50 deposit.",
 };
 
 export default function BookingPage() {

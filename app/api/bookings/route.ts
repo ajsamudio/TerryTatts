@@ -70,7 +70,7 @@ export async function POST(req: Request) {
   //   line_items: [{
   //     price_data: {
   //       currency: "usd",
-  //       product_data: { name: "Terry Tattoos — booking deposit" },
+  //       product_data: { name: "buddha_.tattz — booking deposit" },
   //       unit_amount: 5000,
   //     },
   //     quantity: 1,
@@ -89,7 +89,7 @@ export async function POST(req: Request) {
   // import { resend } from "@/lib/resend";
   // import BookingConfirmation from "@/emails/BookingConfirmation";
   // await resend.emails.send({
-  //   from: "Terry Tattoos <hello@terrytattoos.com>",
+  //   from: "buddha_.tattz <hello@buddhatattz.com>",
   //   to: booking.email,
   //   subject: "Your booking is confirmed",
   //   react: BookingConfirmation({ booking }),

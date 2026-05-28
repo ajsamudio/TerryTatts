@@ -6,7 +6,7 @@ import { Button } from "@/components/ui/button";
 import { SERVICES, DEPOSIT_USD } from "@/lib/services";
 
 export const metadata = {
-  title: "Services & Pricing — Terry Tattoos",
+  title: "Services & Pricing — buddha_.tattz",
   description: "Custom work, flash, half/full sleeves, and cover-ups. Pricing and what's included.",
 };
 
