@@ -20,9 +20,9 @@ export function Hero() {
           }}
         />
         {/* Overlays */}
-        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-black/45" />
         <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(185,28,28,0.15),transparent_55%)]" />
-        <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,#0a0a0a_100%)]" />
+        <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_10%,rgba(0,0,0,0.8)_100%)]" />
         <FlashLines />
       </div>
 
