@@ -12,7 +12,16 @@ export function Hero() {
     <section className="relative min-h-[100svh] flex items-center justify-center overflow-hidden">
       {/* Backdrop */}
       <div className="absolute inset-0">
-        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(185,28,28,0.18),transparent_55%)]" />
+        {/* Background Image */}
+        <div
+          className="absolute inset-0 bg-cover bg-center"
+          style={{
+            backgroundImage: "url('/gallery/galleryTat1.jpg')",
+          }}
+        />
+        {/* Overlays */}
+        <div className="absolute inset-0 bg-black/60" />
+        <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_center,rgba(185,28,28,0.15),transparent_55%)]" />
         <div className="absolute inset-0 bg-[linear-gradient(180deg,transparent_0%,#0a0a0a_100%)]" />
         <FlashLines />
       </div>

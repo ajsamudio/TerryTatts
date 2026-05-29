@@ -3,7 +3,6 @@ import { Inter, Cinzel, Special_Elite } from "next/font/google";
 import { Toaster } from "@/components/ui/sonner";
 import { SiteNav } from "@/components/site-nav";
 import { SiteFooter } from "@/components/site-footer";
-import { MobileCta } from "@/components/mobile-cta";
 import "./globals.css";
 
 const body = Inter({
@@ -71,7 +70,6 @@ export default function RootLayout({
         <SiteNav />
         <main className="flex-1 relative z-10">{children}</main>
         <SiteFooter />
-        <MobileCta />
         <Toaster theme="dark" position="top-center" />
       </body>
     </html>
